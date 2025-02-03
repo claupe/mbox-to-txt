@@ -21,18 +21,6 @@ import re
 
 # Patterns of text to delete from messages.
 DELETION_PATTERS = [
-    # Reply text:
-    r'(\n|^)On.*\n?.*wrote:\n+(.|\n)*$',
-    r'(\n|^)From:(.|\n)*$',
-
-    # Forwarded messages:
-    r'(\n|^)---------- Forwarded message ----------(.|\n)*$',
-
-    # PGP:
-    r'(\n|^)-----BEGIN PGP MESSAGE-----\n(.|\n)*-----END PGP MESSAGE-----\n',
-
-    # Embedded links:
-    r'<[^ ]+>',
 ]
 
 
